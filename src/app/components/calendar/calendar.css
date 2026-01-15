@@ -26,9 +26,9 @@
 }
 
 .calendar-header button {
-  background: var(--bg-card-hover);
+  background: var(--border-soft);
   color: var(--text-main);
-  border: 2px solid var(--border-soft);
+  border: 2px solid var(--bg-card-hover);
   padding: 6px 10px;
   border-radius: 10px;
   box-shadow: 0 0 4px rgba(0,0,0,0.3);
@@ -54,6 +54,7 @@
   padding: 10px 0;
   border: 2px solid var(--bg-card-hover);
   border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
   text-align: center;
   cursor: pointer;
   font-size: 0.9rem;

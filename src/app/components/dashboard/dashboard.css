@@ -5,6 +5,7 @@
   overflow: hidden;
 
   background: var(--border-soft);
+  border: 2px solid var(--bg-card-hover);
   border-radius: 16px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 

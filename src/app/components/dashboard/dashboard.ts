@@ -78,7 +78,7 @@ export class Dashboard implements OnInit, OnChanges {
       }
     });
     this.moodCounts = counts;
-    this.chartData = { labels: this.moodLabels, datasets: [{ data: this.moodCounts, backgroundColor: this.moodColors, borderWidth: 0 }] };
+    this.chartData = { labels: this.moodLabels, datasets: [{ data: this.moodCounts, backgroundColor: this.moodColors, borderColor: '#323135ff', borderWidth: 2 }] };
   }
 
   // Calcula frecuencia de tags
