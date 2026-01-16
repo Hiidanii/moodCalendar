@@ -24,12 +24,6 @@ El objetivo es ofrecer una forma **visual, simple y rápida** de llevar un segui
   * 1 mood
   * 0 o más tags
 
-### Reglas importantes
-
-* ❌ **No se pueden modificar días futuros**
-* ✅ **Sí se pueden modificar días pasados**
-* Cada día solo puede tener **un mood**
-
 ---
 
 ## 😀 Moods
@@ -74,7 +68,7 @@ Ejemplos de tags:
 * 📚 (estudiar)
 * 👥 (amigos)
 * 🎮 (videojuegos)
-* 😴 (poco sueño)
+* 🛌🏼 (poco sueño)
 * ☀️ / 🌧️ (clima)
 
 > Recomendación: máximo **3–5 tags por día**.
@@ -99,10 +93,12 @@ Esto simplifica el desarrollo y hace que la app sea:
 ## 🧱 Estructura de datos (conceptual)
 
 ```ts
-interface MoodEntry {
-  date: string;        // YYYY-MM-DD
-  mood: MoodType;     // mood seleccionado
-  tags: string[];     // emojis
+export type MoodType = "😄" | "🙂" | "😌" | "😐" | "😣" | "😢";
+
+export interface MoodEntry {
+  date: string;   // YYYY-MM-DD
+  mood: MoodType;
+  tags: string[]; // Emojis
 }
 ```
 
@@ -126,8 +122,7 @@ Las gráficas se generan **exclusivamente a partir de datos de localStorage**.
 ## 🖥️ Pantallas principales
 
 * 📅 Calendario mensual
-* 🎭 Selector de mood
-* 🏷️ Selector de tags (emojis)
+* 🎭 Selector de mood y tags (emojis)
 * 📊 Dashboard de estadísticas
 
 ---
