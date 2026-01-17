@@ -72,3 +72,10 @@
   .chart-container { height: 260px; min-width: unset; }
   .chart-container h3 { font-size: 0.95rem; }
 }
+
+/* Móviles pequeños */
+@media (max-width: 385px) {
+  .dashboard-container { padding: 14px 12px 70px; }
+  .chart-container { height: 240px; }
+  .chart-container h3 { font-size: 0.9rem; }
+}

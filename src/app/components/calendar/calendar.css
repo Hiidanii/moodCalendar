@@ -103,3 +103,12 @@
   .calendar-header h2 { font-size: 0.95rem; }
   .calendar-header button { padding: 6px 8px; font-size: 0.95rem; }
 }
+
+/* Móviles pequeños */
+@media (max-width: 385px) {
+  .calendar-container { padding: 8px; }
+  .calendar-grid { grid-template-columns: repeat(7, minmax(32px, 1fr)); gap: 5px; }
+  .day { padding: 5px 0; font-size: 0.7rem; }
+  .calendar-header h2 { font-size: 0.9rem; }
+  .calendar-header button { padding: 5px 7px; font-size: 0.9rem; }
+}

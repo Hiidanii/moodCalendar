@@ -96,8 +96,16 @@
 
 /* Móviles */
 @media (max-width: 430px) {
-  .modal { width: 95%; max-width: 380px; padding: 12px; }
+  .modal { width: 92%; max-width: 380px; padding: 12px; }
   .modal h3 { font-size: 1rem; }
   .mood-selector span, .tag-selector span { padding: 6px 6px; font-size: 0.95rem; }
   .modal-buttons button { padding: 8px 12px; font-size: 0.9rem; }
+}
+
+/* Móviles pequeños */
+@media (max-width: 385px) {
+  .modal { width: 90%; max-width: 340px; padding: 10px; }
+  .modal h3 { font-size: 0.95rem; }
+  .mood-selector span, .tag-selector span { padding: 5px 5px; font-size: 0.9rem; }
+  .modal-buttons button { padding: 6px 10px; font-size: 0.85rem; }
 }
