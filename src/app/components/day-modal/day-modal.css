@@ -72,13 +72,32 @@
   transition: background 0.2s ease;
 }
 
-@media (max-width: 520px) {
-  .modal { padding: 16px; }
-  .mood-selector span, .tag-selector span { padding: 6px 8px; font-size: 1rem; }
-  .modal h3 { font-size: 1rem; }
-  .modal-buttons button { padding: 8px 12px; font-size: 0.9rem; }
-}
-
 .modal-buttons button:hover {
   background: var(--accent-hover);
+}
+
+/* Diseño responsive */
+
+/* Pantallas un poco más estrechas */
+@media (max-width: 1280px) {
+  .modal { max-width: 420px; }
+}
+
+/* Tablets landscape / Small laptops */
+@media (max-width: 1024px) {
+  .modal { padding: 20px; }
+}
+
+/* Tablets portrait / Móviles grandes */
+@media (max-width: 768px) {
+  .modal { width: 92%; max-width: 420px; padding: 18px; }
+  .mood-selector span, .tag-selector span { padding: 6px 8px; font-size: 1.05rem; }
+}
+
+/* Móviles */
+@media (max-width: 430px) {
+  .modal { width: 95%; max-width: 380px; padding: 12px; }
+  .modal h3 { font-size: 1rem; }
+  .mood-selector span, .tag-selector span { padding: 6px 6px; font-size: 0.95rem; }
+  .modal-buttons button { padding: 8px 12px; font-size: 0.9rem; }
 }

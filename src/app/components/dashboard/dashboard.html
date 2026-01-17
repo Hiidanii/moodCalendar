@@ -1,5 +1,5 @@
 <div class="dashboard-container">
-    <h2>{{ getMonthName(month) }} {{ year }}</h2>
+    <h2>Estadísticas de {{ getMonthName(month) }} {{ year }}</h2>
 
     <p *ngIf="averageMood > 0">Mood medio mensual: {{ averageMood }}</p>
     <p *ngIf="averageMood === 0">No hay datos para este mes</p>

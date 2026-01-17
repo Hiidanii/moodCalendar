@@ -46,12 +46,29 @@
   flex: 1;
 }
 
-@media (max-width: 900px) {
-  .chart-container { min-width: 220px; height: 300px; }
+/* Diseño responsive */
+
+/* Pantallas un poco más estrechas */
+@media (max-width: 1280px) {
+  .chart-container { min-width: 300px; height: 320px; }
 }
 
-@media (max-width: 720px) {
+/* Tablets landscape / Small laptops */
+@media (max-width: 1024px) {
+  .charts { gap: 16px; }
+  .chart-container { min-width: 280px; }
+}
+
+/* Tablets portrait / Móviles grandes */
+@media (max-width: 768px) {
   .charts { flex-direction: column; gap: 12px; }
   .chart-container { width: 100%; min-width: unset; height: 320px; }
-  .chart-container:first-child { margin-bottom: 80px; }
+  .chart-container:first-child { margin-bottom: 64px; }
+}
+
+/* Móviles */
+@media (max-width: 430px) {
+  .dashboard-container { padding: 16px 14px 80px; }
+  .chart-container { height: 260px; min-width: unset; }
+  .chart-container h3 { font-size: 0.95rem; }
 }
