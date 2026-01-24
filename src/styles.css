@@ -1,26 +1,55 @@
-/* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 :root {
-    --bg-card: #2d2c30ff;
-    --bg-card-hover: #3a3940ff;
-    --border-soft: #323135ff;
+	/* Colores de fondo */
+	--bg-primary: #2d2c30;
+	--bg-card: #2d2c30;
+	--bg-card-hover: #3a3940;
+	--bg-dashboard: #26262b;
+	
+	/* Bordes */
+	--border-soft: #323135;
+	--border-card: #222227;
 
-    --text-main: #e5e7eb;
-    --text-muted: #9ca3af;
+	/* Textos */
+	--text-main: #e5e7eb;
+	--text-muted: #9ca3af;
+	--text-white: #ffffff;
 
-    --accent: #6179ffff;
-    --accent-hover: #4e61ccff;
+	/* Acentos */
+	--accent: #6179ff;
+	--accent-hover: #4e61cc;
+
+	/* Espaciado */
+	--spacing-xs: 4px;
+	--spacing-sm: 8px;
+	--spacing-md: 12px;
+	--spacing-lg: 16px;
+	--spacing-xl: 20px;
+	--spacing-2xl: 24px;
+
+	/* Bordes redondeados */
+	--radius-sm: 10px;
+	--radius-md: 16px;
+	--radius-lg: 18px;
+
+	/* Sombras */
+	--shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.2);
+	--shadow-md: 0 4px 8px rgba(0, 0, 0, 0.2);
+	--shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.5);
+	--shadow-blur: 0 0 4px rgba(0, 0, 0, 0.3);
+
+	/* Transiciones */
+	--transition-fast: all 0.2s ease;
 }
 
 body {
-	/* Fondo de cuadrícula: líneas horizontales y verticales */
-	background-color: #2d2c30ff;
+	background-color: var(--bg-primary);
 	background-image:
-		linear-gradient(to right, #323135ff 2px, transparent 1px),
-		linear-gradient(to bottom,  #323135ff 2px, transparent 1px);
+		linear-gradient(to right, var(--border-soft) 2px, transparent 1px),
+		linear-gradient(to bottom, var(--border-soft) 2px, transparent 1px);
 	background-size: 50px 50px;
-    margin: 0;
-    padding: 0;
-    font-family: "Poppins", sans-serif;
+	margin: 0;
+	padding: 0;
+	font-family: "Poppins", sans-serif;
 }
